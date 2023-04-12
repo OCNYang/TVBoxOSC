@@ -27,7 +27,7 @@
 
         <activity
             android:name=".ui.activity.HomeActivity"
-            android:screenOrientation="landscape">
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -38,28 +38,28 @@
 
         <activity
             android:name=".ui.activity.LivePlayActivity"
-            android:screenOrientation="landscape" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ui.activity.DetailActivity"
-            android:screenOrientation="landscape" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ui.activity.PlayActivity"
-            android:screenOrientation="landscape" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ui.activity.PushActivity"
-            android:screenOrientation="landscape" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ui.activity.SearchActivity"
-            android:screenOrientation="landscape" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ui.activity.SettingActivity"
-            android:screenOrientation="landscape" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ui.activity.HistoryActivity"
-            android:screenOrientation="landscape" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ui.activity.CollectActivity"
-            android:screenOrientation="landscape" />
+            android:screenOrientation="portrait" />
 
         <receiver android:name=".receiver.SearchReceiver">
             <intent-filter>
@@ -84,10 +84,10 @@
 
         <meta-data
             android:name="design_width_in_dp"
-            android:value="1280" />
+            android:value="720" />
         <meta-data
             android:name="design_height_in_dp"
-            android:value="720" />
+            android:value="1280" />
 
         <meta-data
             android:name="xwalk_enable_download_mode"
