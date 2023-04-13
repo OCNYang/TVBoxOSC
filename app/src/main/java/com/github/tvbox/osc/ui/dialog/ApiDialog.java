@@ -55,7 +55,7 @@ public class ApiDialog extends BaseDialog {
         ivQRCode = findViewById(R.id.ivQRCode);
         tvAddress = findViewById(R.id.tvAddress);
         inputApi = findViewById(R.id.input);
-        inputApi.setText(Hawk.get(HawkConfig.API_URL, ""));
+        inputApi.setText(Hawk.get(HawkConfig.API_URL, "https://raw.liucn.cc/box/m.json"));
         findViewById(R.id.inputSubmit).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -127,6 +127,25 @@ public class ApiDialog extends BaseDialog {
                                 }
                             });
                 }
+            }
+        });
+
+        findViewById(R.id.tv_kaiyuan).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                inputApi.setText("https://raw.liucn.cc/box/m.json");
+            }
+        });
+        findViewById(R.id.tv_duocang).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                inputApi.setText("https://raw.liucn.cc/box/dm.txt");
+            }
+        });
+        findViewById(R.id.tv_neizhi).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                inputApi.setText("https://raw.liucn.cc/box/xiaopingguo.json");
             }
         });
         refreshQRCode();
