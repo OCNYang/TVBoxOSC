@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/black">
+    android:background="@android:color/black"
+    tools:context=".ui.activity.PlayActivity">
 
 
     <xyz.doikki.videoplayer.player.VideoView
@@ -38,7 +39,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="@dimen/vs_50"
-        android:text="1111111111111"
         android:textColor="@color/color_CCFFFFFF"
-        android:textSize="@dimen/ts_24" />
+        android:textSize="@dimen/ts_24"
+        tools:text="加载中" />
 </FrameLayout>

@@ -2,7 +2,8 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <LinearLayout
         android:layout_width="@dimen/vs_720"
@@ -28,6 +29,10 @@
             android:layout_height="@dimen/vs_50"
             android:layout_marginTop="@dimen/vs_10"
             android:layout_marginBottom="@dimen/vs_10"
+            tools:listitem="@layout/item_search_word_split"
+            tools:itemCount="9"
+            tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:orientation="horizontal"
             android:clipChildren="false"
             android:clipToPadding="false"
             app:tv_horizontalSpacingWithMargins="@dimen/vs_5"
@@ -40,6 +45,7 @@
             android:layout_height="match_parent"
             android:clipChildren="false"
             android:clipToPadding="false"
+            tools:listitem="@layout/item_quick_search_lite"
             app:tv_horizontalSpacingWithMargins="@dimen/vs_5"
             app:tv_selectedItemIsCentered="true"
             app:tv_verticalSpacingWithMargins="@dimen/vs_5" />

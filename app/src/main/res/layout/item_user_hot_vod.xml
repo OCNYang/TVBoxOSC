@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:background="@drawable/shape_user_focus"
@@ -15,7 +16,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:padding="@dimen/vs_1"
-            android:scaleType="fitXY" />
+            android:scaleType="fitXY"
+            tools:src="@tools:sample/avatars" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -24,7 +26,8 @@
             android:layout_marginTop="@dimen/vs_5"
             android:layout_marginRight="@dimen/vs_5"
             android:orientation="horizontal"
-            android:visibility="gone">
+            android:visibility="gone"
+            tools:visibility="visible">
 
             <TextView
                 android:id="@+id/tvRate"
@@ -40,7 +43,8 @@
                 android:paddingRight="@dimen/vs_5"
                 android:singleLine="true"
                 android:textColor="@android:color/white"
-                android:textSize="@dimen/ts_20" />
+                android:textSize="@dimen/ts_20"
+                tools:text="@tools:sample/us_zipcodes" />
 
         </LinearLayout>
 
@@ -68,7 +72,8 @@
                 android:paddingRight="@dimen/vs_5"
                 android:singleLine="true"
                 android:textColor="@android:color/white"
-                android:textSize="@dimen/ts_20" />
+                android:textSize="@dimen/ts_20"
+                tools:text="@tools:sample/cities" />
 
             <TextView
                 android:id="@+id/tvName"
@@ -80,7 +85,8 @@
                 android:padding="@dimen/vs_5"
                 android:singleLine="true"
                 android:textColor="@android:color/white"
-                android:textSize="@dimen/ts_22" />
+                android:textSize="@dimen/ts_22"
+                tools:text="@tools:sample/full_names" />
         </LinearLayout>
     </FrameLayout>
 </FrameLayout>

@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_marginLeft="10mm"
     android:layout_marginTop="10mm"
+    android:layout_marginRight="10mm"
     android:layout_marginBottom="10mm"
     android:background="@drawable/shape_live_focus"
-    android:layout_marginLeft="10mm"
-    android:layout_marginRight="10mm"
     android:focusable="true"
     android:focusableInTouchMode="false"
     android:orientation="horizontal">
@@ -20,7 +21,8 @@
         android:marqueeRepeatLimit="marquee_forever"
         android:singleLine="true"
         android:textColor="@android:color/white"
-        android:textSize="22mm" />
+        android:textSize="22mm"
+        tools:text="00" />
 
     <TextView
         android:id="@+id/tvChannelName"
@@ -32,5 +34,6 @@
         android:marqueeRepeatLimit="marquee_forever"
         android:singleLine="true"
         android:textColor="@android:color/white"
-        android:textSize="22mm" />
+        android:textSize="22mm"
+        tools:text="@tools:sample/first_names" />
 </LinearLayout>

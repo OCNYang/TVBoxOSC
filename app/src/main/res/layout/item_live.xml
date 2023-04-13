@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:background="@drawable/shape_source_focus"
@@ -20,7 +21,8 @@
         android:text="+新增直播"
         android:textColor="@color/color_CBF46A"
         android:textSize="24mm"
-        android:visibility="gone" />
+        android:visibility="gone"
+        tools:visibility="visible" />
 
     <TextView
         android:id="@+id/tvLive"

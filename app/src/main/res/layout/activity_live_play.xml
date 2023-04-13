@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:id="@+id/live_root" xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/live_root"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.LivePlayActivity">
 
     <xyz.doikki.videoplayer.player.VideoView
         android:id="@+id/mVideoView"
@@ -16,7 +19,8 @@
         android:layout_marginLeft="-421mm"
         android:gravity="center_vertical"
         android:orientation="horizontal"
-        android:visibility="visible" >
+        android:visibility="visible"
+        tools:layout_marginLeft="0dp">
 
         <com.owen.tvrecyclerview.widget.TvRecyclerView
             android:id="@+id/mGroupGridView"
@@ -28,14 +32,17 @@
             android:paddingRight="5mm"
             android:paddingBottom="10mm"
             android:visibility="visible"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:tv_selectedItemIsCentered="true"
-            app:tv_verticalSpacingWithMargins="10mm" />
+            app:tv_verticalSpacingWithMargins="10mm"
+            tools:itemCount="8"
+            tools:listitem="@layout/item_live_channel_group" />
 
         <View
             android:layout_width="1mm"
             android:layout_height="match_parent"
-            android:background="@color/color_FFFFFF"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:background="@color/color_FFFFFF" />
 
         <com.owen.tvrecyclerview.widget.TvRecyclerView
             android:id="@+id/mChannelGridView"
@@ -48,50 +55,55 @@
             android:paddingBottom="10mm"
             android:visibility="visible"
             app:tv_selectedItemIsCentered="true"
-            app:tv_verticalSpacingWithMargins="10mm" />
+            app:tv_verticalSpacingWithMargins="10mm"
+            tools:itemCount="8"
+            tools:listitem="@layout/item_live_channel" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/tvRightSettingLayout"
         android:layout_width="361mm"
         android:layout_height="match_parent"
-        android:layout_marginRight="-361mm"
         android:layout_gravity="right"
+        android:layout_marginRight="-361mm"
         android:gravity="center_vertical"
         android:orientation="horizontal"
-        android:visibility="visible" >
+        android:visibility="visible"
+        tools:layout_marginRight="0dp">
 
         <com.owen.tvrecyclerview.widget.TvRecyclerView
             android:id="@+id/mSettingItemView"
             android:layout_width="180mm"
             android:layout_height="match_parent"
             android:background="@color/color_66000000"
+            android:gravity="center"
             android:paddingLeft="5mm"
             android:paddingTop="10mm"
             android:paddingRight="5mm"
             android:paddingBottom="10mm"
             android:visibility="visible"
-            android:gravity= "center"
             app:tv_selectedItemIsCentered="true"
-            app:tv_verticalSpacingWithMargins="10mm" />
+            app:tv_verticalSpacingWithMargins="10mm"
+            tools:itemCount="8"
+            tools:listitem="@layout/item_live_setting" />
 
         <View
             android:layout_width="1mm"
             android:layout_height="match_parent"
-            android:background="@color/color_FFFFFF"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:background="@color/color_FFFFFF" />
 
         <com.owen.tvrecyclerview.widget.TvRecyclerView
             android:id="@+id/mSettingGroupView"
             android:layout_width="180mm"
             android:layout_height="match_parent"
             android:background="@color/color_66000000"
+            android:gravity="center"
             android:paddingLeft="5mm"
             android:paddingTop="10mm"
             android:paddingRight="5mm"
             android:paddingBottom="10mm"
             android:visibility="visible"
-            android:gravity= "center"
             app:tv_selectedItemIsCentered="true"
             app:tv_verticalSpacingWithMargins="10mm" />
     </LinearLayout>
@@ -110,7 +122,9 @@
         android:textColor="@android:color/white"
         android:textSize="36mm"
         android:textStyle="bold"
-        android:visibility="gone" />
+        android:visibility="gone"
+        tools:text="@tools:sample/lorem"
+        tools:visibility="visible" />
 
     <TextView
         android:id="@+id/tvTime"
@@ -123,17 +137,22 @@
         android:gravity="center"
         android:textColor="@android:color/white"
         android:textSize="22mm"
-        android:visibility="gone" />
+        android:visibility="gone"
+        tools:text="11:52"
+        tools:visibility="visible" />
+
     <TextView
         android:id="@+id/tvNetSpeed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|right"
-        android:layout_marginBottom="5mm"
         android:layout_marginRight="5mm"
+        android:layout_marginBottom="5mm"
         android:background="@android:color/transparent"
         android:gravity="center"
         android:textColor="@android:color/white"
         android:textSize="22mm"
-        android:visibility="gone" />
+        android:visibility="gone"
+        tools:text="wifi"
+        tools:visibility="visible" />
 </FrameLayout>

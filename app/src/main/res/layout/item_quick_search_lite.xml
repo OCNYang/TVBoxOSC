@@ -2,6 +2,7 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
     android:background="@drawable/button_dialog_main"
     android:focusable="true">
 
@@ -12,6 +13,7 @@
         android:ellipsize="middle"
         android:gravity="center_vertical"
         android:padding="@dimen/vs_10"
+        tools:text="@tools:sample/first_names"
         android:singleLine="true"
         android:textColor="@color/color_FFFFFF"
         android:textSize="@dimen/ts_20" />

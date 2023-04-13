@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_gravity="center"
     android:layout_marginTop="10mm"
     android:layout_marginBottom="10mm"
-    android:layout_gravity="center"
     android:background="@drawable/shape_live_focus"
     android:focusable="true"
     android:focusableInTouchMode="false"
@@ -20,5 +21,6 @@
         android:marqueeRepeatLimit="marquee_forever"
         android:singleLine="true"
         android:textColor="@android:color/white"
-        android:textSize="22mm" />
+        android:textSize="22mm"
+        tools:text="@tools:sample/last_names" />
 </LinearLayout>

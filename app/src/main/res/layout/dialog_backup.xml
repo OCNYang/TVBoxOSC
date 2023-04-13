@@ -24,8 +24,7 @@
             android:textSize="@dimen/ts_26"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:text="11111111111111111111111" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <LinearLayout
             android:id="@+id/backup_buttons"
@@ -82,8 +81,7 @@
             android:textSize="@dimen/ts_26"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/backup_buttons"
-            tools:text="11111111111111111111111" />
+            app:layout_constraintTop_toBottomOf="@id/backup_buttons" />
 
         <com.owen.tvrecyclerview.widget.TvRecyclerView
             android:id="@+id/list"
@@ -96,6 +94,7 @@
             app:layout_constraintHeight_max="@dimen/vs_480"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
+            tools:listitem="@layout/item_dialog_backup"
             app:layout_constraintTop_toBottomOf="@+id/restore_tip"
             app:tv_layoutManager="V7LinearLayoutManager"
             app:tv_selectedItemIsCentered="true"

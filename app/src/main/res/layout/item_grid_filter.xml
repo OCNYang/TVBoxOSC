@@ -19,7 +19,7 @@
         android:textAlignment="gravity"
         android:textColor="@color/color_CC000000"
         android:textSize="@dimen/ts_24"
-        tools:text="11111111111" />
+        tools:text="@tools:sample/last_names" />
 
     <com.owen.tvrecyclerview.widget.TvRecyclerView
         android:id="@+id/mFilterKv"
@@ -29,6 +29,9 @@
         android:clipToPadding="false"
         app:tv_horizontalSpacingWithMargins="@dimen/vs_5"
         app:tv_selectedItemIsCentered="true"
-        app:tv_verticalSpacingWithMargins="@dimen/vs_5" />
+        app:tv_verticalSpacingWithMargins="@dimen/vs_5"
+        tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_grid_filter_value"
+        tools:orientation="horizontal" />
 
 </LinearLayout>

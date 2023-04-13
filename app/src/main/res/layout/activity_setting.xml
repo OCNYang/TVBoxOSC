@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal">
+    android:orientation="horizontal"
+    tools:context=".ui.activity.SettingActivity">
 
     <LinearLayout
         android:layout_width="@dimen/vs_180"
@@ -13,13 +15,16 @@
         android:paddingTop="@dimen/vs_20"
         android:paddingRight="@dimen/vs_10"
         android:paddingBottom="@dimen/vs_20"
-        android:visibility="gone">
+        android:visibility="gone"
+        tools:visibility="visible">
 
         <com.owen.tvrecyclerview.widget.TvRecyclerView
             android:id="@+id/mGridView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_gravity="center" />
+            android:layout_gravity="center"
+            tools:itemCount="8"
+            tools:listitem="@layout/item_setting_menu" />
     </LinearLayout>
 
     <com.github.tvbox.osc.ui.tv.widget.NoScrollViewPager

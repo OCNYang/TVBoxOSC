@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    tools:context=".ui.activity.SearchActivity"
     android:layout_height="match_parent"
     android:orientation="horizontal">
 
@@ -50,7 +52,7 @@
                     android:textColor="@android:color/white"
                     android:textSize="@dimen/ts_20" />
 
-                <Space
+                <androidx.legacy.widget.Space
                     android:layout_width="@dimen/vs_10"
                     android:layout_height="wrap_content" />
 
@@ -125,7 +127,9 @@
             android:clipToPadding="false"
             app:tv_horizontalSpacingWithMargins="@dimen/vs_5"
             app:tv_selectedItemIsCentered="true"
-            app:tv_verticalSpacingWithMargins="@dimen/vs_5" />
+            app:tv_verticalSpacingWithMargins="@dimen/vs_5"
+            tools:itemCount="8"
+            tools:listitem="@layout/item_search_word_hot" />
     </LinearLayout>
 
     <LinearLayout
@@ -144,6 +148,13 @@
             android:visibility="invisible"
             app:tv_horizontalSpacingWithMargins="@dimen/vs_5"
             app:tv_selectedItemIsCentered="true"
-            app:tv_verticalSpacingWithMargins="@dimen/vs_5" />
+            app:tv_verticalSpacingWithMargins="@dimen/vs_5"
+            tools:itemCount="8"
+            tools:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            tools:listitem="@layout/item_search"
+            tools:orientation="vertical"
+            tools:scrollbars="vertical"
+            tools:spanCount="3"
+            tools:visibility="visible" />
     </LinearLayout>
 </LinearLayout>
